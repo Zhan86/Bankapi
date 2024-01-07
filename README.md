@@ -4,6 +4,16 @@
       user_id SERIAL PRIMARY KEY,
       balance DECIMAL(10, 2) NOT NULL
   );
+
+  CREATE TABLE operations (
+    operation_id SERIAL PRIMARY KEY,
+    user_id BIGINT,
+    operation_type INT,
+    amount DOUBLE PRECISION,
+    operation_date TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES user_balance(user_id)
+);
+
 2)server.port=8080
 3) Endpoint Post "/user/create-user" (creates user with 0 balance)
 4) Endpoint Get "user/{userId}/balance" (shows balance)
