@@ -11,7 +11,7 @@ public class UserBalance {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userId;
+    private long userId;
 
     private double balance;
 }
