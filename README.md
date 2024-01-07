@@ -20,4 +20,4 @@
 5) Endpoint Post "user/{userId}/put-money" (puts money, increases balance)
 6) Endpoint Post "user/{userId}/take-money" (takes money, reduses balance)
 7) Endpoint Get "user/{userId}/get-operation-list") (shows operations. for example http://localhost:8080/user/1/get-operation-list?startDate=2024-01-01&endDate=2024-01-06)
-8) Endpoint Post "user/{userId}/get-operation-list") (transfers money. for example http://localhost:8080/user/transfer-money?senderUserId=2&receiverUserId=1&amount=1000)
+8) Endpoint Post "user/transfer-money") (transfers money. for example http://localhost:8080/user/transfer-money?senderUserId=2&receiverUserId=1&amount=1000)
